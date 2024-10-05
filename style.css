@@ -90,3 +90,68 @@ footer {
 #order-summary {
     margin-top: 20px; /* Space above the order summary */
 }
+
+
+/* Burger Menu Styles */
+/* Burger Menu Styles */
+.burger {
+    display: none; /* Initially hidden */
+    cursor: pointer; /* Pointer cursor on hover */
+    flex-direction: column; /* Stack lines vertically */
+}
+
+.line {
+    height: 3px; /* Line thickness */
+    width: 30px; /* Line width */
+    background-color: black; /* Line color */
+    margin: 3px 0; /* Space between lines */
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute; /* Position absolute for overlay */
+    left: 0; /* Align to the left */
+    top: 60px; /* Adjust based on header height */
+    background-color: white; /* Background color for nav */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: none; /* Hide by default */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    padding: 15px; /* Space around menu items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+}
+
+nav a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Hidden class for toggling visibility */
+.hidden {
+    display: none; /* Hide menu */
+}
+
+/* Show class for displaying menu */
+.show {
+    display: block; /* Show menu when active */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .burger {
+        display: flex; /* Show burger icon on mobile */
+    }
+    nav {
+        display: none; /* Hide nav by default on mobile */
+    }
+}

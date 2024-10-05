@@ -9,9 +9,23 @@
 </head>
 <body>
     <header>
-    <a href="index.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
-        <h1>Test Automation Practice</h1>
-    </header>
+    <img src="assets/logo.png" alt="Logo" class="left-icon">
+    <h1>Welcome to Your Automation Hub</h1>
+    <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav id="nav-links" class="hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration_form.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="selenium-docs.html" target="_blank">Selenium Docs</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section id="home-section">
         <h2>Select a Page to Test</h2>
@@ -28,6 +42,6 @@
     <footer>
         <p>Created by Ahmed Ali Shaban</p>
     </footer>
-
+	<script src="burger.js"></script>
 </body>
 </html>
