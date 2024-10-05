@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <a href="home.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
+        <h1>Checkout</h1>
+    </header>
+
+    <section id="checkout-section">
+        <h2>Billing Information</h2>
+        <form id="checkoutForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="eg">Egypt</option>
+                <option value="de">Germany</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">--Select Payment Method--</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bankTransfer">Bank Transfer</option>
+                <!-- Add more payment methods as needed -->
+            </select>
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="itemsList">
+                <li>Item 1: $10.00</li>
+                <li>Item 2: $15.00</li>
+                <li>Item 3: $20.00</li>
+            </ul>
+            <p>Total: $45.00</p>
+        </section>
+    </section>
+
+    <footer>
+        <p>Created by Ahmed Ali Shaaban Ali</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

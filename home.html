@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <a href="home.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
+        <h1>Test Automation Practice</h1>
+    </header>
+
+    <section id="home-section">
+        <h2>Select a Page to Test</h2>
+
+        <!-- Buttons to navigate to different pages -->
+        <button onclick="location.href='login.html'">Login Page</button>
+        <button onclick="location.href='registration_form.html'">Registration Page</button>
+	<button onclick="location.href='checkout.html'">Checkout Page</button>
+	<button id="goToSelenium" onclick="window.open('https://www.selenium.dev/documentation/en/', '_blank')">Selenium Documentation</button>
+	
+        <!-- Add more buttons as you create new pages -->
+    </section>
+
+    <footer>
+        <p>Created by Ahmed Ali Shaban</p>
+    </footer>
+
+</body>
+</html>

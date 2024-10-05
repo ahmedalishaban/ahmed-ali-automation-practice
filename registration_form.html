@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <a href="home.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
+        <h1>Registration</h1>
+    </header>
+
+    <section id="register-section">
+        <h2>Register Form</h2>
+        <form id="registerForm">
+            <!-- New Username -->
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <!-- New Password -->
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Marital Status -->
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">--Select--</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+            </select>
+
+            <!-- Country -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="eg">Egypt</option>
+                <option value="de">Germany</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <!-- Phone Number with Country Code -->
+            <label for="phone">Phone Number:</label>
+            <div>
+                <select id="countryCode" name="countryCode" required>
+                    <option value="+1">+1 US</option>
+                    <option value="+44">+44 UK</option>
+                    <option value="+20">+20 Egypt</option>
+                    <option value="+49">+49 Germany</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+            </div>
+
+            <!-- Address -->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <!-- Register Button -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Login Button -->
+        <button id="goToLogin" onclick="location.href='login.html'">Already Registered? Login</button>
+
+        <section id="register-result"></section>
+    </section>
+
+    <footer>
+        <p>Created by Ahmed Ali Shaaban Ali</p>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

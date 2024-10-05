@@ -1,0 +1,92 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    line-height: 1.6; /* Improve line spacing */
+    padding: 20px; /* Add padding around the body */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center; /* Vertically centers both the logo and the title */
+    justify-content: center; /* Horizontally centers the title */
+    padding: 10px;
+    background-color: #f8f9fa; /* Background color */
+    position: relative; /* Allows positioning of the logo */
+}
+
+/* For the logo (icon) */
+header img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10px; /* Positions the logo towards the left */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the logo */
+}
+
+/* Header title */
+header h1 {
+    flex-grow: 1; /* Takes up available space */
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+/* Section styles */
+section {
+    background: white; /* White background for the forms */
+    padding: 20px; /* Padding inside the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Maximum width for better layout */
+    margin: auto; /* Center the section */
+}
+
+/* Form styles */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input, select, and textarea styles */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    margin-bottom: 15px; /* Space between elements */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+/* Button styles */
+button {
+    padding: 10px; /* Padding for buttons */
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    margin-bottom: 15px; /* Space below buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above the footer */
+    font-size: 14px; /* Smaller font size for the footer */
+}
+
+/* Order summary styles (specific to checkout) */
+#order-summary {
+    margin-top: 20px; /* Space above the order summary */
+}
