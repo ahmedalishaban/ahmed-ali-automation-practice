@@ -9,13 +9,11 @@
 </head>
 <body>
 <header>
-    
     <div class="burger" id="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-	<a href="index.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
     <h1>Checkout</h1>
     <nav id="nav-links" class="hidden">
         <ul>
@@ -24,65 +22,64 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="checkout.html">Checkout</a></li>
             <li><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium Docs</a></li>
-            <li><a href="author.html" target="_blank">About the Author</a></li>
+            <li><a href="https://ahmedalishaban.github.io/portfolio/" target="_blank">About the Author</a></li>
         </ul>
     </nav>
 </header>
 
-    <section id="checkout-section">
-        <h2>Billing Information</h2>
-        <form id="checkoutForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
+<section id="checkout-section">
+    <h2>Billing Information</h2>
+    <form id="checkoutForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
 
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" rows="3" required></textarea>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
 
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
 
-            <label for="postalCode">Postal Code:</label>
-            <input type="text" id="postalCode" name="postalCode" required>
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" required>
 
-            <label for="country">Country:</label>
-            <select id="country" name="country" required>
-                <option value="">--Select Country--</option>
-                <option value="us">United States</option>
-                <option value="uk">United Kingdom</option>
-                <option value="eg">Egypt</option>
-                <option value="de">Germany</option>
-                <!-- Add more countries as needed -->
-            </select>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="eg">Egypt</option>
+            <option value="de">Germany</option>
+            <!-- Add more countries as needed -->
+        </select>
 
-            <label for="paymentMethod">Payment Method:</label>
-            <select id="paymentMethod" name="paymentMethod" required>
-                <option value="">--Select Payment Method--</option>
-                <option value="creditCard">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bankTransfer">Bank Transfer</option>
-                <!-- Add more payment methods as needed -->
-            </select>
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">--Select Payment Method--</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bankTransfer">Bank Transfer</option>
+            <!-- Add more payment methods as needed -->
+        </select>
 
-            <button type="submit">Complete Purchase</button>
-        </form>
+        <button type="submit">Complete Purchase</button>
+    </form>
 
-        <section id="order-summary">
-            <h2>Order Summary</h2>
-            <ul id="itemsList">
-                <li>Item 1: $10.00</li>
-                <li>Item 2: $15.00</li>
-                <li>Item 3: $20.00</li>
-            </ul>
-            <p>Total: $45.00</p>
-        </section>
+    <section id="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="itemsList">
+            <li>Item 1: $10.00</li>
+            <li>Item 2: $15.00</li>
+            <li>Item 3: $20.00</li>
+        </ul>
+        <p>Total: $45.00</p>
     </section>
+</section>
 
-    <footer>
-        <p>Created by Ahmed Ali Shaban</p>
-    </footer>
+<footer>
+    <p>Created by Ahmed Ali Shaban</p>
+</footer>
 
-    <script src="checkout.js"></script>
-    <script src="burger.js"></script>
-
+<script src="checkout.js"></script>
+<script src="burger.js"></script>
 </body>
 </html>

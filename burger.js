@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.classList.toggle("hidden"); // Toggle 'hidden' class
     });
 });
+

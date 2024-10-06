@@ -14,7 +14,6 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <a href="index.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
     <h1>Welcome to Your Automation Hub</h1>
     <nav id="nav-links" class="hidden">
         <ul>
@@ -23,37 +22,40 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="checkout.html">Checkout</a></li>
             <li><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium Docs</a></li>
-            <li><a href="author.html" target="_blank">About the Author</a></li>
+            <li><a href="https://ahmedalishaban.github.io/portfolio/" target="_blank">About the Author</a></li>
         </ul>
     </nav>
 </header>
 
+<section id="login-section">
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
 
-    <section id="login-section">
-        <h2>Login Form</h2>
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
-        </form>
-        <section id="login-result"></section>
-
-        <!-- Button to navigate to the registration page -->
-        <p>Don't have an account? <button id="registerButton">Register Here</button></p>
-
-	<button id="clearLocalStorage">Reset All Data</button>
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+    </form>
     
+    <section id="login-result"></section>
+
+    <!-- Button to navigate to the registration page -->
+    <p>Don't have an account? <button id="registerButton">Register Here</button></p>
+
+    <!-- Clear Local Storage -->
+    <button id="clearLocalStorage">Reset All Data</button>
 </section>
 
-    <footer>
-        <p>Created by Ahmed Ali Shaban</p>
-    </footer>
+<footer>
+    <p>Created by Ahmed Ali Shaban</p>
+</footer>
 
-    <script src="login.js"></script>
-    <script src="burger.js"></script>
+<script src="login.js"></script>
+<script src="burger.js"></script>
 </body>
 </html>
