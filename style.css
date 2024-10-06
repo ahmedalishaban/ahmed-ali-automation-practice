@@ -1,157 +1,194 @@
-/* General body styles */
-body {
-    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
-    line-height: 1.6; /* Improve line spacing */
-    padding: 20px; /* Add padding around the body */
-    background-color: #f4f4f4; /* Light background color */
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-/* Header styles */
-header {
-    display: flex;
-    align-items: center; /* Vertically centers both the logo and the title */
-    justify-content: center; /* Horizontally centers the title */
-    padding: 10px;
-    background-color: #f8f9fa; /* Background color */
-    position: relative; /* Allows positioning of the logo */
-}
-
-/* For the logo (icon) */
-header img {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 10px; /* Positions the logo towards the left */
-    top: 50%;
-    transform: translateY(-50%); /* Vertically centers the logo */
-}
-
-/* Header title */
-header h1 {
-    flex-grow: 1; /* Takes up available space */
-    text-align: center;
+html, body {
+    height: 100%;
     margin: 0;
-    font-size: 24px;
-}
-/* Section styles */
-section {
-    background: white; /* White background for the forms */
-    padding: 20px; /* Padding inside the section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px; /* Maximum width for better layout */
-    margin: auto; /* Center the section */
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    overflow-y: auto;    /* Enable vertical scroll */
+    font-family: Arial, sans-serif;
 }
 
-/* Form styles */
-form {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-}
-
-/* Input, select, and textarea styles */
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="tel"],
-select,
-textarea {
-    margin-bottom: 15px; /* Space between elements */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners for inputs */
-    font-size: 16px; /* Larger font size for better readability */
-}
-
-/* Button styles */
-button {
-    padding: 10px; /* Padding for buttons */
-    background-color: #007BFF; /* Primary button color */
-    color: white; /* Text color for buttons */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners for buttons */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Button font size */
-    margin-bottom: 15px; /* Space below buttons */
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker color on hover */
-}
-
-/* Footer styles */
-footer {
-    text-align: center; /* Center footer text */
-    margin-top: 20px; /* Space above the footer */
-    font-size: 14px; /* Smaller font size for the footer */
-}
-
-/* Order summary styles (specific to checkout) */
-#order-summary {
-    margin-top: 20px; /* Space above the order summary */
+body {
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 
-/* Burger Menu Styles */
-/* Burger Menu Styles */
+
+/* ===== VARIABLES ===== */
+:root {
+  --primary-color: hsl(224, 89%, 60%);
+  --secondary-color: hsl(224, 56%, 12%);
+  --font-family: 'Poppins', sans-serif;
+  --font-size-normal: 0.938rem;
+  --font-size-large: 1.25rem;
+  --font-size-header: 2rem;
+  --padding-section: 20px;
+  --border-radius: 8px;
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --header-height: 3rem;
+}
+
+/* ===== RESET AND BASE STYLES ===== */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  background-image: url('assets/Background.jpg');
+  color: var(--secondary-color);
+  padding-top: var(--header-height);
+  scroll-behavior: smooth;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+}
+
+header h1 {
+  font-size: var(--font-size-header);
+  color: var(--secondary-color);
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .burger {
-    display: none; /* Initially hidden */
-    cursor: pointer; /* Pointer cursor on hover */
-    flex-direction: column; /* Stack lines vertically */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .line {
-    height: 3px; /* Line thickness */
-    width: 30px; /* Line width */
-    background-color: black; /* Line color */
-    margin: 3px 0; /* Space between lines */
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  margin: 3px 0;
 }
 
-/* Navigation Styles */
+/* ===== NAVIGATION MENU ===== */
 nav {
-    position: absolute; /* Position absolute for overlay */
-    left: 0; /* Align to the left */
-    top: 60px; /* Adjust based on header height */
-    background-color: white; /* Background color for nav */
-    width: 100%; /* Full width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: none; /* Hide by default */
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  box-shadow: var(--shadow-light);
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+  padding: 20px;
 }
 
 nav li {
-    padding: 15px; /* Space around menu items */
-}
-
-nav a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Link color */
+  margin-bottom: 20px;
 }
 
 nav a:hover {
-    background-color: #f0f0f0; /* Background color on hover */
+  color: var(--primary-color);
 }
 
-/* Hidden class for toggling visibility */
-.hidden {
-    display: none; /* Hide menu */
-}
-
-/* Show class for displaying menu */
 .show {
-    display: block; /* Show menu when active */
+  display: block;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .burger {
-        display: flex; /* Show burger icon on mobile */
-    }
-    nav {
-        display: none; /* Hide nav by default on mobile */
-    }
+/* ===== SECTION ===== */
+section {
+  background-color: #fff;
+  padding: var(--padding-section);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* ===== FORM STYLES ===== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: var(--font-size-normal);
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

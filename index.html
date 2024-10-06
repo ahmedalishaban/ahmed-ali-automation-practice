@@ -7,41 +7,45 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-    <img src="assets/logo.png" alt="Logo" class="left-icon">
-    <h1>Welcome to Your Automation Hub</h1>
+
+<header>
     <div class="burger" id="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
+    <a href="index.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
+    <h1>Welcome to Your Automation Hub</h1>
     <nav id="nav-links" class="hidden">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="registration_form.html">Register</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="checkout.html">Checkout</a></li>
-            <li><a href="selenium-docs.html" target="_blank">Selenium Docs</a></li>
+            <li><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium Docs</a></li>
+            <li><a href="https://ahmedalishaban.github.io/portfolio/" target="_blank">About the Author</a></li>
         </ul>
     </nav>
 </header>
 
-    <section id="home-section">
-        <h2>Select a Page to Test</h2>
-
-        <!-- Buttons to navigate to different pages -->
-        <button onclick="location.href='login.html'">Login Page</button>
-        <button onclick="location.href='registration_form.html'">Registration Page</button>
-	<button onclick="location.href='checkout.html'">Checkout Page</button>
-	<button id="goToSelenium" onclick="window.open('https://www.selenium.dev/documentation/en/', '_blank')">Selenium Documentation</button>
-	
-        <!-- Add more buttons as you create new pages -->
+<body>
+    <div id="header-placeholder"></div> <!-- Placeholder for header -->
+    
+    <section id="intro-section">
+        <h2>About This Website</h2>
+        <p>Welcome to your automation practices hub! This website aims to provide resources and tools for individuals interested in mastering automation testing.</p>
+        <p>Our goal is to help software testers, developers, and quality assurance professionals enhance their skills in automation testing, enabling them to deliver high-quality software efficiently.</p>
+        <p>Whether you are a beginner looking to learn the fundamentals or an experienced tester seeking advanced techniques, this site is tailored for you!</p>
+        <p>Explore our resources, engage with the community, and embark on your journey towards becoming an automation testing expert!</p>
     </section>
+
 
     <footer>
         <p>Created by Ahmed Ali Shaban</p>
     </footer>
-	<script src="burger.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="burger.js"></script>
+   
 </body>
 </html>

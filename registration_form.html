@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+<header>
+    <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     <a href="index.html"><img src="assets/logo.png" alt="Home"></a> <!-- Home icon -->
-        <h1>Registration</h1>
-    </header>
+    <h1>Welcome to Your Automation Hub</h1>
+    <nav id="nav-links" class="hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration_form.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium Docs</a></li>
+            <li><a href="author.html" target="_blank">About the Author</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <section id="register-section">
         <h2>Register Form</h2>
@@ -84,5 +100,7 @@
     </footer>
 
     <script src="register.js"></script>
+    <script src="burger.js"></script>
+
 </body>
 </html>
